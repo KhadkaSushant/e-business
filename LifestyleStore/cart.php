@@ -48,7 +48,7 @@
                 <table class="table table-bordered table-striped">
                     <tbody>
                         <tr>
-                            <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
+                            <th>Item Number</th><th>Item Name</th><th>Price</th><th>Action</th>
                         </tr>
                        <?php 
                         $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
@@ -69,11 +69,19 @@
                 </table>
             </div>
             <br><br><br><br><br><br><br><br><br><br>
+
+            
+
+
+
+
+
+
             <footer class="footer">
                <div class="container">
                <center>
-                   <p>Copyright &copy Lifestyle Store. All Rights Reserved. | Contact Us: +91 90000 00000</p>
-                   <p>This website is developed by Sajal Agrawal</p>
+                   <p>Copyright &copy Khadka Store. All Rights Reserved. | Contact Us: +91 90000 00000</p>
+                   <p>This website is developed by Sushant Khadka</p>
                </center>
                </div>
            </footer>

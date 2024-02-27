@@ -25,8 +25,8 @@
             ?>
             <div class="container">
                 <div class="jumbotron">
-                    <h1>Welcome to our LifeStyle Store!</h1>
-                    <p>We have the best cameras, watches and shirts for you. No need to hunt around, we have all in one place.</p>
+                    <h1>Welcome to our Khadka Store!</h1>
+                    <p>We have the best pants, shoes and shirts for you. No need to hunt around, we have all in one place.</p>
                 </div>
             </div>
             <div class="container">
@@ -39,7 +39,7 @@
                             
                                 <div class="caption">
                                     <h3>Vneck Side Pockets Elegant Dress</h3>
-                                    <p>Price: Rs. 36000.00</p>
+                                    <p>Price: Rs. 3000</p>                           
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -67,7 +67,7 @@
                             
                                 <div class="caption">
                                     <h3>Tow Tone Waistless Pleated Dress</h3>
-                                    <p>Price: Rs. 40000.00</p>
+                                    <p>Price: Rs. 2000</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -94,7 +94,7 @@
                             
                                 <div class="caption">
                                     <h3>Tiny Front Peek-A-Boo Printed Top</h3>
-                                    <p>Price: Rs. 50000.00</p>
+                                    <p>Price: Rs. 2800</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -121,7 +121,7 @@
                             
                                 <div class="caption">
                                     <h3>Daily Solid Button Crop Pink Tee</h3>
-                                    <p>Price: Rs. 80000.00</p>
+                                    <p>Price: Rs. 1500</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -150,7 +150,7 @@
                             
                                 <div class="caption">
                                     <h3>Star Printed Basic Crew Neck Tshirt</h3>
-                                    <p>Price: Rs. 13000.00</p>
+                                    <p>Price: Rs. 3000</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -177,7 +177,7 @@
                             
                                 <div class="caption">
                                     <h3>Vneck Strappy Printed Mini Dress</h3>
-                                    <p>Price: Rs. 3000.00</p>
+                                    <p>Price: Rs. 2200</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -204,7 +204,7 @@
                             
                                 <div class="caption">
                                     <h3>One Shoulder Flared Sleeves Maxi Dress</h3>
-                                    <p>Price: Rs. 8000.00</p>
+                                    <p>Price: Rs. 3000</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -231,7 +231,7 @@
                             
                                 <div class="caption">
                                     <h3>Dark Floral Roses Printed Mini Dress</h3>
-                                    <p>Price: Rs. 18000.00</p>
+                                    <p>Price: Rs. 1800</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -260,7 +260,7 @@
                             
                                 <div class="caption">
                                     <h3>Blue Floral Princess Off Shoulder Midi Dress</h3>
-                                    <p>Price: Rs. 1500.00</p>
+                                    <p>Price: Rs. 1500</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -287,7 +287,7 @@
                             
                                 <div class="caption">
                                     <h3>Three Tiered Sleeve Frilled Printed Top</h3>
-                                    <p>Price: Rs. 1000.00</p>
+                                    <p>Price: Rs. 1000</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -314,7 +314,7 @@
                             
                                 <div class="caption">
                                     <h3>Summer Men' Stylish Combo Set Of Half-Pant And Tshirt</h3>
-                                    <p>Price: Rs. 900.00</p>
+                                    <p>Price: Rs. 1500</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php
@@ -341,7 +341,7 @@
                             
                                 <div class="caption">
                                     <h3>Men's Comfortable Combo Set 3-pcs</h3>
-                                    <p>Price: Rs. 1200.00</p>
+                                    <p>Price: Rs. 2500</p>
                                     <?php if(!isset($_SESSION['email'])){  ?>
                                         <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>
                                         <?php

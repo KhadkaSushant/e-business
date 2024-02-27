@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2017 at 04:06 PM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: Feb 27, 2024 at 07:57 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -30,25 +31,25 @@ CREATE TABLE `items` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `price` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `items`
 --
 
 INSERT INTO `items` (`id`, `name`, `price`) VALUES
-(1, 'Cannon EOS', 36000),
-(2, 'Sony DSLR', 40000),
-(3, 'Sony DSLR', 50000),
-(4, 'Olympus DSLR', 80000),
-(5, 'Titan Model #301', 13000),
-(6, 'Titan Model #201', 3000),
-(7, 'HMT Milan', 8000),
-(8, 'Favre Lueba #111', 18000),
-(9, 'Raymond', 1500),
-(10, 'Charles', 1000),
-(11, 'HXR', 900),
-(12, 'PINK', 1200);
+(1, 'Vneck Side Pockets Elegant Dress\n', 3000),
+(2, 'Tow Tone Waistless Pleated Dress', 2000),
+(3, 'Tiny Front Peek-A-Boo Printed Top', 2800),
+(4, 'Daily Solid Button Crop Pink Tee', 1500),
+(5, 'Star Printed Basic Crew Neck Tshirt', 3000),
+(6, 'Vneck Strappy Printed Mini Dress', 2200),
+(7, 'One Shoulder Flared Sleeves Maxi Dress', 3000),
+(8, 'Dark Floral Roses Printed Mini Dress', 1800),
+(9, 'Blue Floral Princess Off Shoulder Midi Dress', 1500),
+(10, 'Three Tiered Sleeve Frilled Printed Top', 1000),
+(11, 'Summer Men\' Stylish Combo Set Of Half-Pant And Tshirt', 1500),
+(12, 'Men\'s Comfortable Combo Set 3-pcs', 2500);
 
 -- --------------------------------------------------------
 
@@ -64,7 +65,7 @@ CREATE TABLE `users` (
   `contact` varchar(255) NOT NULL,
   `city` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `users`
@@ -72,8 +73,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `address`) VALUES
 (1, 'Sajal', 'sajal.agrawal1997@gmail.com', '57f231b1ec41dc6641270cb09a56f897', '8899889988', 'Indore', '100 palace colony, Indore'),
-(2, 'Ram', 'ram1234@xyz.com', '57f231b1ec41dc6641270cb09a56f897', '8899889989', 'Pune', '100 palace colony, Pune'),
-(3, 'Shyam', 'shyam@xyz.com', '57f231b1ec41dc6641270cb09a56f897', '8899889990', 'Bangalore', '100 palace colony, Bangalore');
+(3, 'Shyam', 'shyam@xyz.com', '57f231b1ec41dc6641270cb09a56f897', '8899889990', 'Bangalore', '100 palace colony, Bangalore'),
+(4, 'sushant khadka', 'khadkasushant313@gmail.com', '422c75fbb4cae4aadb88158a5e65cc99', '9869723777', 'ktm', 'Syuchatar-10');
 
 -- --------------------------------------------------------
 
@@ -86,7 +87,7 @@ CREATE TABLE `users_items` (
   `user_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `status` enum('Added to cart','Confirmed') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `users_items`
@@ -99,7 +100,10 @@ INSERT INTO `users_items` (`id`, `user_id`, `item_id`, `status`) VALUES
 (10, 3, 11, 'Added to cart'),
 (11, 1, 9, 'Added to cart'),
 (12, 1, 2, 'Added to cart'),
-(13, 1, 8, 'Added to cart');
+(13, 1, 8, 'Added to cart'),
+(28, 4, 1, 'Confirmed'),
+(29, 4, 2, 'Confirmed'),
+(30, 4, 6, 'Confirmed');
 
 --
 -- Indexes for dumped tables
@@ -134,16 +138,19 @@ ALTER TABLE `users_items`
 --
 ALTER TABLE `items`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `users_items`
 --
 ALTER TABLE `users_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
 --
 -- Constraints for dumped tables
 --
@@ -154,6 +161,7 @@ ALTER TABLE `users_items`
 ALTER TABLE `users_items`
   ADD CONSTRAINT `users_items_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `users_items_ibfk_2` FOREIGN KEY (`item_id`) REFERENCES `items` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

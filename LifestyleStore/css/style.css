@@ -2,13 +2,14 @@
     margin-bottom: 0px;
 }
 
+
 #bannerImage{
     padding-top:75px;
     padding-bottom:50px;
     margin-bottom: 20px;
     text-align:center;
     color:#f8f8f8;
-    background:url(../img/intro-bg_1.jpg);
+    background:url("../img1/banner/b4.jpg");
     background-size:cover;
 }
 
